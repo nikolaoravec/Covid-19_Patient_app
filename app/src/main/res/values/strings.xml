@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Covid-19 Application</string>
+    <string name="created_by">Created by: Nikola Oravec RN104/2018</string>
+    <string name="text_login">Informacioni sistem za pracenje stanja pacijenata obolelih od Covid-19</string>
+    <string name="broj_stanje_otpusteno">0</string>
+    <string name="broj_stanje_hospitalizovano">0</string>
+    <string name="profil_ime_bolnice">Urgentni Centar KCS</string>
+</resources>

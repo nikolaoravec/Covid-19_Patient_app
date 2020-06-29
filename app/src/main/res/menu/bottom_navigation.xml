@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stanje"
+        android:icon="@drawable/exclamation"
+        android:title="Stanje"/>
+
+    <item
+        android:id="@+id/unos"
+        android:icon="@drawable/add_user"
+        android:title="Unos"/>
+
+    <item
+        android:id="@+id/liste"
+        android:icon="@drawable/list"
+        android:title="Liste"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/profil"
+        android:title="Profil"/>
+
+</menu>

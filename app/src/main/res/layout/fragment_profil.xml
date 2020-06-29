@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+            <TextView
+                android:id="@+id/tv_profil_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Podaci o zdravstevnom radniku"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewProfil"/>
+
+            <ImageView
+                android:id="@+id/imageViewProfil"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/bandage_cross"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_ime_head"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_head"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_profil_ime_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ime:"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewProfil"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_ime"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="50dp"/>
+
+            <TextView
+                android:id="@+id/tv_profil_ime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_ime_head"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_prezime_head"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_profil_prezime_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prezime:"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_ime"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_prezime"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="50dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_profil_prezime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_prezime_head"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_bolnica_head"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_profil_bolnica_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bolnica:"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_prezime"
+                app:layout_constraintBottom_toTopOf="@+id/tv_profil_bolnica"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="50dp"/>
+
+            <TextView
+                android:id="@+id/tv_profil_bolnica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_bolnica_head"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="30dp"/>
+
+            <Button
+                android:id="@+id/btn_izmeni"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Izmeni"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_bolnica"
+                app:layout_constraintRight_toLeftOf="@+id/btn_odjava"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_odjava"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Odjava"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_blue_dark"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/btn_izmeni"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profil_bolnica"
+                android:layout_marginBottom="10dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

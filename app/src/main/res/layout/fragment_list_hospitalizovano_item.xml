@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box"
+    android:layout_margin="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_hosp_patientsPic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_patient_hosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_hosp_patientsPic"
+        app:layout_constraintBottom_toTopOf="@id/tv_lastname_patient_hosp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_lastname_patient_hosp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_patient_hosp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hosp_patientsPic"
+        app:layout_constraintStart_toEndOf="@id/iv_hosp_patientsPic"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btn_karton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lastname_patient_hosp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_otpusti"
+        android:text="Karton"/>
+
+    <Button
+        android:id="@+id/btn_otpusti"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lastname_patient_hosp"
+        app:layout_constraintStart_toEndOf="@+id/btn_karton"
+        android:text="Otpusti"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
